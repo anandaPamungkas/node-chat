@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node chat</title>
+    <!--include ajax from socket.io you can get the link from socket.io webiste-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+    <div id="node-chat">
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+        </div>
+        <input id="handle" type="text" placeholder="Handle" />
+        <input type="text" id="message" placeholder="Message" />
+        <button id="send">Send</button>
+
+    </div>
+    <script src="/chat.js"></script>
+    <!--include socket.io from chat.js file, to make websocket from socket.io available fro client side-->
+</body>
+
+</html>
